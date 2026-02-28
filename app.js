@@ -144,4 +144,5 @@ class TodoApp {
 
 let app;
 document.addEventListener("DOMContentLoaded", () => app = new TodoApp());
-"serviceWorker" in navigator && window.addEventListener("load", () => navigator.serviceWorker.register("/service-worker.js").catch(() => {}));
+
+"serviceWorker" in navigator && window.addEventListener("load", () => navigator.serviceWorker.register("service-worker.js").catch(() => {}));
